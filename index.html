@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolology</title>
+    <meta name="description" content="Toolology offers 100+ completely free tools with no ads. Convert units, edit text, calculate, manipulate colors, and more. All tools work directly in your browser.">
+    <meta name="keywords" content="free tools, online tools, unit converter, text utilities, color tools, calculators, web development tools, productivity tools">
+    <meta name="author" content="Aarav Sharma">
+    <meta property="og:title" content="Toolology - 100+ Free Tools for Productivity & Development">
+    <meta property="og:description" content="100+ completely free tools with no ads. All tools work directly in your browser.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Toolology - 100+ Free Tools">
+    <meta name="twitter:description" content="100+ completely free tools with no ads. All tools work directly in your browser.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><path d='M35,30 L45,20 L65,40 L55,50 Z M40,35 L30,45 L20,35 L30,25 Z M60,45 L70,55 L60,65 L50,55 Z M45,60 L55,70 L35,70 L25,60 L35,50 L45,60 Z' fill='white'/><circle cx='50' cy='50' r='15' fill='black' stroke='white' stroke-width='3'/></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Toolology</h1>
+                <div class="theme-toggle">
+                    <button id="themeToggle">Light Mode</button>
+                </div>
+            </div>
+            <p>100+ tools implemented v1</p>
+            
+            <div class="search-bar">
+                <input type="text" id="toolSearch" placeholder="Search for any tool in Za warudo..." />
+                <button id="clearSearch">Clear</button>
+            </div>
+        </header>
+
+        <nav class="categories">
+            <div class="category active" data-category="all">All Tools</div>
+            <div class="category" data-category="screen">Screen & Display</div>
+            <div class="category" data-category="unit">Unit Converters</div>
+            <div class="category" data-category="math">Math & Calculators</div>
+            <div class="category" data-category="text">Text Utilities</div>
+            <div class="category" data-category="color">Color Tools</div>
+            <div class="category" data-category="time">Time & Date</div>
+            <div class="category" data-category="dev">Development</div>
+            <div class="category" data-category="file">File & Data</div>
+        </nav>
+
+        <div class="tools-grid" id="toolsGrid">
+            <!-- Tools will be dynamically loaded here -->
+        </div>
+
+        <div class="tool-container" id="toolContainer">
+            <div class="tool-header">
+                <h2 id="currentToolName">Select a Tool</h2>
+                <button id="backToGrid">← Back to Tools</button>
+            </div>
+            <div class="tool-content" id="toolContent">
+                <div class="welcome-message">
+                    <h3>Welcome to Toolology</h3>
+                    <p>Select a tool from the grid to get started. Use search or categories to find what you need.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with pure JavaScript, By - Aarav Sharma, email me on - rockrider.aarav@gmail.com for complaints, suggestions etc </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
